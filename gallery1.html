@@ -31,9 +31,25 @@
         .gallery img:hover {
             transform: scale(1.05); /* Scale up on hover */
         }
+        .back-button {
+            position: absolute; /* Position it relative to the nearest positioned ancestor */
+            top: 20px;         /* Adjust distance from the top */
+            left: 20px;        /* Adjust distance from the left */
+            padding: 10px 20px; /* Add some padding */
+            background-color: #007BFF; /* Button color */
+            color: white;      /* Text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Round corners */
+            font-size: 16px;   /* Font size */
+        }
+        .back-button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
     </style>
 </head>
 <body>
+
+    <a href="index.html" class="back-button">Back</a> <!-- Back Button -->
 
     <h1>clips</h1>
     <div class="gallery">
@@ -45,24 +61,21 @@
         <img src="images/anas6.png" alt="anas getting no scoped 2">
         <img src="images/anas7.png" alt="anas getting no scoped 3">
         
-
         <video width="200" controls autoplay muted>
-        <source src="images/anasdancingC.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+            <source src="images/anasdancingC.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         
         <video width="200" controls autoplay muted>
-        <source src="images/IMG_4516.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
+            <source src="images/IMG_4516.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
         <video width="200" controls autoplay muted>
-        <source src="images/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        
         <!-- Add more images as needed -->
     </div>
 
