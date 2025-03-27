@@ -19,6 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px; /* Add spacing between elements */
         }
         .gallery img {
             margin: 10px;
@@ -32,18 +33,23 @@
             transform: scale(1.05); /* Scale up on hover */
         }
         .back-button {
-            position: absolute; /* Position it relative to the nearest positioned ancestor */
-            top: 20px;         /* Adjust distance from the top */
-            left: 20px;        /* Adjust distance from the left */
-            padding: 10px 20px; /* Add some padding */
-            background-color: #007BFF; /* Button color */
-            color: white;      /* Text color */
-            text-decoration: none; /* Remove underline */
-            border-radius: 5px; /* Round corners */
-            font-size: 16px;   /* Font size */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
         .back-button:hover {
-            background-color: #0056b3; /* Darker color on hover */
+            background-color: #0056b3;
+        }
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -52,10 +58,16 @@
     <a href="index.html" class="back-button">Back</a> <!-- Back Button -->
 
     <h1>clips</h1>
+    
     <div class="gallery">
         <img src="images/image_2024-10-28_212450087.png" alt="fardeen">
-        
-        <!-- Add more images as needed -->
+    </div>
+
+    <div class="audio-container">
+        <audio controls autoplay>
+            <source src="images/ScreenRecording_03-14-2025_21-28-10_1.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
     </div>
 
 </body>
